@@ -1,8 +1,3 @@
-locate ".torrent"
-exit
-monolith
-sudo reboot
-sudo apt-get update
 sudo apt-get upgrade
 knuth
 cd /shared/Music/My\ Chemical\ Romance/
@@ -1997,4 +1992,9 @@ cd ../Cyberia\ Mix\ \(FLAC\)/
 ls
 scp Serial\ Experiments\ Lain\ Soundtrack\ Cyberia\ Mix\ -\ 02\ -\ duvet\ Cyberia\ reMIX.flac skye@monolith.st.hmc.edu:~/
 htop
+exit
+ping skye.cs.hmc.edu
+exit
+ssh-skye
+vim .bash_aliases 
 exit

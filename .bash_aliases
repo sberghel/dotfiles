@@ -15,6 +15,7 @@ alias ark='ssh sberghel@ark.cs.hmc.edu'
 alias kay='ssh sberghel@kay.cs.hmc.edu'
 alias hoare='ssh mudd@hoare.cs.hmc.edu'
 alias zazu='ssh skye@134.173.41.2'
+alias sshskye='ssh skye@skye.cs.hmc.edu'
 
 #Less is more.
 alias more='less'
