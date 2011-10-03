@@ -1,0 +1,14 @@
+# Default options for Kovensky's MPlayer (http://kovensky.project357.com)
+# Manual available at http://www.mplayerhq.hu/DOCS/man/en/mplayer.1.html
+font=Arial
+
+# vo=xv is the default on X11-based systems
+# vo=directx is the default for pre-Vista OSes
+# vo=gl:yuv=2 is the default for Vista+
+
+# Allows taking screenshots with 's'
+vf=screenshot
+
+vo=gl
+fixed-vo=yes
+ao=alsa
