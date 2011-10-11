@@ -1,136 +1,3 @@
-sudo apt-get upgrade
-knuth
-cd /shared/Music/My\ Chemical\ Romance/
-ls
-cd Danger\ Days\ The\ True\ Lives\ of\ the\ Fabulous\ Killjoys/
-ls
-mplayer *
-sudo apt-get update
-sudo apt-get upgrade
-exit
-monolith
-exit
-cd robots
-pdflatex notes-2011-4-5.tex 
-exit
-monolith
-exit
-monolith
-exit
-ls
-cd robots
-ls
-vim notes-2011-4-5.tex
-exit
-sudo apt-get update
-sudo apt-get upgrade
-ssh skye@134.173.43.208
-exit
-cd dropbox/clinic/
-vim notes-2011-4-5
-gedit notes-2011-4-5 
-monolith
-monolith
-cd dropbox/clinic/
-wc notes-2011-4-5 
-help wc
-wc --help
-sudo poweroff
-ping google.com
-exit
-ping 134.173.42.2
-exit
-sudo poweroff
-monolith
-sudo apt-get update
-sudo apt-get upgrade
-ssh skye@134.173.43.208
-sudo apt-get update
-sudo apt-get upgrade
-sudo poweroff
-cd pls
-ls
-mkdir hw9
-mv hmwk9.tex hw9/hw9.tex
-cd hw9/
-pdflatex hw9.tex 
-vim pr5.hs
-vim PCFEnvinterpreter.hs 
-ls
-pdflatex hw9.tex 
-mv pr5.hs pr4.hs
-pdflatex hw9.tex 
-cd pls
-ls
-cd hw9/
-ls
-vim hw9.tex 
-ls
-vim PCFEnvinterpreter.hs 
-vim hw9.tex 
-vim pr2.hs
-mv pr2.hs pr2a.hs
-cp pr2a.hs pr2b.hs
-vim pr2b.hs 
-vim hw9.tex 
-cd pls/hw9/
-ldf
-ghci
-ls
-ls -al
-ghci
-cd hw9
-ls
-cd pls/hw9/
-ls
-vim ParsePCF.hs 
-vim PCFEnvinterpreter.hs 
-vim ParsePCF.hs 
-sudo apt-get update
-sudo apt-get upgrade
-ssh skye@facebook-s.clinic.cs.hmc.edu
-monolith
-sudo reboot
-calc
-monolith
-exit
-monolith
-exit
-ls
-cd robots
-ls
-vim notes-2011-4-14.tex
-sudo poweroff
-ssh skye@134.173.43.208
-exit
-ssh skye@facebook-s.clinic.cs.hmc.edu
-exit
-cd pls/hw10/
-ls
-pdflatex hw10.tex 
-exit
-cd pls/hw10/
-ls
-vim hw10.tex 
-ls
-ls -al
-rm .hw10.tex.swp 
-vim hw10.tex 
-exit
-monolith
-exit
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get update && sudo apt-get upgrade
-sudo poweroff
-killall gnome-do
-htop
-sudo service gdm restart
-sudo poweroff
-sudo apt-get update && sudo apt-get upgrade
-exit
-ls
-cd robots
-vim notes-2011-4-19.tex
 sudo poweroff
 monolith
 exit
@@ -1997,4 +1864,137 @@ ping skye.cs.hmc.edu
 exit
 ssh-skye
 vim .bash_aliases 
+exit
+git commit -a -m "yes, project"
+git push
+sshskye
+ping skye.cs.hmc.edu
+vim .bash_aliases
+exit
+ssh-keygen
+mkdir spideroak/ssh/
+cp /home/skye/.ssh/id_rsa* spideroak/ssh/
+sshskye
+ssh -T git@github.com
+git config --global user.name "Skye Berghel"
+git config --global user.email "sberghel@cs.hmc.edu"
+git init
+git add .vimrc
+git add .bash*
+git add .mplayer/config
+git add .irssi/*
+git commit -m "adding dotfiles"
+git remote add origin git@github.com:sberghel/dotfiles.git
+git push -u origin master
+vim README.txt
+git add README.txt
+git commit -m "Adding a readme"
+git push
+mkdir asdf
+cd asdf
+git init
+ls
+ls -al
+rm -rf .git
+cd ../
+rm -rf asdf
+cd .irssi/
+ls
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch log'
+cd ../
+echo ".irssi/log" >> .gitignore
+git add .gitignore
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log'
+git commit -m "changing gitignore"
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log'
+git status
+echo ".irssi/scripts/twirssi.json" >> .gitignore
+git add .gitignore
+git commit -m "ignoring more"
+git status
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/scripts/twirssi.json'
+git clean
+git add .irssi/scripts/twirssi.json
+git commit -m "huh"
+git status
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/scripts/twirssi.json'
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log'
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log' -f
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log' -fr
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log' -rf
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/log -rf
+'
+git push
+git pull
+git push -f
+echo ".irssi/scripts/twirssi.oath" >> ".gitignore"
+git commit -a -m "still more ignoring"
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/scripts/twirssi.oauth'
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch .irssi/scripts/twirssi.oauth' -f
+git push -f
+ping skye.cs.hmc.edu
+knuth
+scp skye@134.173.41.122:~/.ssh/id_rsa.pub ./
+zazu
+sudo reboot
+twitter
+wicd-curses
+irssi
+exit
+twitter
+exit
+cd information-security
+ls
+view watermarking-summary.tex 
+pdflatex biometrics_summary.tex 
+exit
+cd information-security
+ls
+vim biometrics_summary.tex
+exit
+sudo reboot
+ls
+antarctica
+vim /etc/fstab
+mount -l
+sudo umount /dev/sdb1
+antarctica
+cd /mnt/antarctica/
+ls
+ls -al
+cd ../
+ls
+cd
+ls
+zazu
+twitter
+irssi
+zazu
+twitter
+yaourt -Syu
+sudo ifconfig eth0 up
+ifconfig eth0
+sudo dhcpcd eth0
+which hostname
+yaourt -S moreutils
+yaourt -R  lib32-alsa-plugins lib32-curl lib32-nss nspluginwrapper
+yaourt -R lib32-alsa-lib lib32-gtk2 lib32-libssh2 lib32-libxt lib32-nspr 
+yaourt -R   lib32-atk lib32-gdk-pixbuf2 lib32-gnutls lib32-libcups lib32-libxcomposite 
+yaourt -R     lib32-krb5 lib32-libgcrypt lib32-libtiff lib32-readline 
+yaourt -R  lib32-e2fsprogs lib32-keyutils lib32-libgpg-error lib32-libjpeg-turbo 
+cd /boot
+ls
+cd grub
+ls
+sudo vim menu.lst 
+sudo reboot
+knuth
+ping archlinux.supsec.org
+ping ftp.osuosl.org
+ping mirrors.kernel.org
+exit
+knuth
+exit
+kay
+knuth
 exit

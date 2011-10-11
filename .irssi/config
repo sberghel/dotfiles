@@ -20,11 +20,9 @@ servers = (
 chatnets = {
   Espernet = {
     type = "IRC";
-    autosendcmd = "/^msg nickserv identify mtfbwy63;wait 2000";
   };
   Freenode = {
     type = "IRC";
-    autosendcmd = "/^msg nickserv identify mtfclinic63;wait 2000";
   };
 };
 
