@@ -14,8 +14,7 @@ alias diffie='ssh mudd@diffie.cs.hmc.edu'
 alias ark='ssh sberghel@ark.cs.hmc.edu'
 alias kay='ssh sberghel@kay.cs.hmc.edu'
 alias hoare='ssh mudd@hoare.cs.hmc.edu'
-alias zazu='ssh skye@134.173.41.2'
-alias sshskye='ssh skye@134.173.41.122'
+alias central='ssh skye@192.168.0.12' #pw thispasswordistoosimple
 
 #Less is more.
 alias more='less'
@@ -40,6 +39,7 @@ alias pine='alpine'
 
 alias twitter='screen -dRU twitter'
 alias wicdc='screen -dRU wicdc'
+alias schat='screen -dRU chat'
 
 #I love mounting external hard drives
 alias antarctica='sudo ntfs-3g -o uid=1000 -o gid=100 /dev/sdb1 /mnt/antarctica'

@@ -6,7 +6,7 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
-  }
+  },
   {
     address = "irc.freenode.net";
     chatnet = "Freenode";
@@ -17,14 +17,7 @@ servers = (
   }
 );
 
-chatnets = {
-  Espernet = {
-    type = "IRC";
-  };
-  Freenode = {
-    type = "IRC";
-  };
-};
+chatnets = { Espernet = { type = "IRC"; }; Freenode = { type = "IRC"; }; };
 
 channels = (
   { name = "#HMC"; chatnet = "Espernet"; autojoin = "yes"; },
@@ -203,12 +196,13 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "vampirecoffee42";
-    user_name = "vampirecoffee42";
-    nick = "vampirecoffee42";
+    real_name = "skye";
+    user_name = "skye";
+    nick = "FallingSkye";
     awaylog_level = "= none";
     settings_autosave = "no";
     log_timestamp = "%H:%M:%S";
+    timestamp_format = "%H:%M";
   };
   "fe-text" = { actlist_sort = "refnum"; scrollback_time = "= 1hour"; };
   "fe-common/core" = {
@@ -238,6 +232,8 @@ settings = {
     awl_columns = "0";
     lastfm_user = "reacocard";
     autorejoin_channels = "#HMC #conjugate #contact";
+    short_url_provider = "";
+    twitter_usernames = "vampirecoffee";
   };
   "irc/core" = { skip_motd = "yes"; };
   "irc/dcc" = { dcc_timeout = "5min"; dcc_download_path = "~"; };

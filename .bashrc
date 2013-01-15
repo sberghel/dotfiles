@@ -12,7 +12,7 @@ HISTCONTROL=ignoredups:ignorespace
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-PATH=~/bin:$PATH
+PATH=~/bin:$PATH:/usr/bin/vendor_perl
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
