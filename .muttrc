@@ -1,0 +1,54 @@
+set from = "skye@vervemobile.com"
+set realname = "James Brown"
+set sendmail = "muttdown"
+set envelope_from = yes
+
+set mbox_type=Maildir
+set folder="~/Mail/Work"
+set spoolfile = "=INBOX"
+set postponed = "=[Gmail].Drafts"
+set mask=".*"
+
+mailboxes =INBOX/
+
+folder-hook "+[Gmail].Sent Mail" set sort=date-sent
+folder-hook . "exec collapse-all"
+set header_cache=~/.mutt-local/cache/headers
+set message_cachedir=~/.mutt-local/cache/bodies
+set certificate_file=~/.mutt-local/certificates
+
+set move=no
+
+ignore headers *
+unignore headers from to subject date cc bcc
+hdr_order From Date: To: From: Cc: Bcc: Subject:
+set mime_forward=ask-yes
+set index_format="%4C %?M?(+%3M)&      ?%Z %-20.20F (%4c) %-10.200s %> %[%b %d %R]"
+set folder_format="%2C %t %N %f %> %d"
+alternative_order text/plain text/enriched multipart/signed text/html *
+auto_view text/html
+
+set duplicate_threads
+set forward_format="Fwd: %s"
+
+set sort=threads
+unset strict_threads
+set sort_aux=reverse-last-date-sent
+set editor="vim -c 'set syntax=mail ft=mail enc=utc-8'"
+
+set followup_to
+set honor_followup_to=yes
+unset record
+
+set delete_untag
+set mark_old=yes
+set reply_to=yes
+unset reply_self
+
+source ~/.mutt/macros
+
+set alias_file=~/.mutt/aliases
+source $alias_file
+set reverse_alias=no
+
+unset collapse_unread
