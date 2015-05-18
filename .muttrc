@@ -1,6 +1,6 @@
 set from = "skye@vervemobile.com"
-set realname = "James Brown"
-set sendmail = "muttdown"
+set realname = "Skye Berghel"
+set sendmail = "muttdown -c /Users/skye/.muttdown.yaml"
 set envelope_from = yes
 
 set mbox_type=Maildir
@@ -34,7 +34,7 @@ set forward_format="Fwd: %s"
 set sort=threads
 unset strict_threads
 set sort_aux=reverse-last-date-sent
-set editor="vim -c 'set syntax=mail ft=mail enc=utc-8'"
+set editor="vim -c 'set syntax=mail ft=mail enc=utf-8'"
 
 set followup_to
 set honor_followup_to=yes

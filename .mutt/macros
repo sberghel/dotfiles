@@ -3,6 +3,7 @@ bind index,pager a group-reply
 bind index,pager s flag-message
 bind index,pager F noop
 macro index,pager m "<save-message>?" "move a message to a mailbox"
+macro index,pager d "<save-message>=[Gmail].All<quote-char> Mail<enter>"
 bind index,pager y delete-message
 macro index I "<tag-prefix><clear-flag>N" "mark tagged messages as read"
 macro index \CU "<untag-pattern>~A<enter>"
