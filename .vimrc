@@ -90,3 +90,11 @@ set ruler
 set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,default,latin1
+
+""" wrap (visually) at word breaks
+set wrap
+set linebreak
+set nolist
+""" but don't automatically insert line breaks in newly entered text
+set textwidth=0
+set wrapmargin=0
