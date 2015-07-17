@@ -20,6 +20,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'groenewege/vim-less'
 Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
 """ Notes for CSV.vim:
 """     Use :[range]ArrangeColumn[!] to visually arrange columns
 """     bang forces recalculating current column width
