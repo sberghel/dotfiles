@@ -99,3 +99,6 @@ set nolist
 """ but don't automatically insert line breaks in newly entered text
 set textwidth=0
 set wrapmargin=0
+
+""" Close YouCompleteMe autocomplete window
+let g:ycm_autoclose_preview_window_after_completion = 1
