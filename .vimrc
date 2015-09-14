@@ -102,3 +102,10 @@ set wrapmargin=0
 
 """ Close YouCompleteMe autocomplete window
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+""" TURN OFF ANNOYING BEEPING NOISE
+""" noerrorbells: turn off (audio) error bells
+""" visualbell: flash screen instead of using audio bell
+""" t_vb sets the code that makes the screen flash; set it to NOTHING. haha.
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set noerrorbells visualbell t_vb=
