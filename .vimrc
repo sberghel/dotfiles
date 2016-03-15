@@ -20,7 +20,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'groenewege/vim-less'
 Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'kennethzfeng/vim-raml'
 """ Notes for CSV.vim:
 """     Use :[range]ArrangeColumn[!] to visually arrange columns
 """     bang forces recalculating current column width
@@ -32,10 +32,10 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
-""" four-space tabs for everything by default
+""" python: four-space tabs for everything by default
 set sw=4
 set smarttab
-set expandtab ts=4 sw=4 sts=4
+set ts=4 sw=4 sts=4
 """ Use :%retab to change all existing tabs to spaces
 syntax enable
 
@@ -46,6 +46,13 @@ filetype plugin indent on
 """ ruby - use 2 spaces for tabs
 autocmd FileType rb :setlocal sw=2 ts=2 sts=2
 autocmd FileType ruby :setlocal sw=2 ts=2 sts=2
+
+""" python: four-space tabs for everything by default
+autocmd FileType py :setlocal sw=4 ts=4 sts=4
+autocmd FileType py :setlocal expandtab
+autocmd FileType python :setlocal sw=4 ts=4 sts=4
+autocmd FileType python :setlocal expandtab
+""" Use :%retab to change all existing tabs to spaces
 
 if has('syntax') && (&t_Co > 2)
   syntax on
@@ -81,8 +88,7 @@ if $VIM_CRONTAB == "true"
 endif
 
 """ display hard tabs as pipes
-set list
-set listchars=tab:\|\ 
+set list listchars=tab:\|\ 
 
 """ show % and col,row on bottom of window
 set ruler
@@ -109,3 +115,10 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 """ t_vb sets the code that makes the screen flash; set it to NOTHING. haha.
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set noerrorbells visualbell t_vb=
+
+""" go: highlight methods
+let g:go_highlight_operators = 1
+""" YouCompleteMe: set python path
+let g:ycm_path_to_python_interpreter="/usr/local/bin/python"
+let g:ycm_server_keep_logfiles = 1
+
